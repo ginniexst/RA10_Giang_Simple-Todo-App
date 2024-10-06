@@ -7,12 +7,18 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <h1>Ứng dụng Quản lý danh sách công việc</h1>
-    <label for="inputTodo">
-      <input type="text" name="inputTodo" id="inputTodo" required />
-      <button id="addBtn">Thêm công việc</button>
-    </label>
+    <div class="container">
+      <h1>Ứng dụng Quản lý danh sách công việc</h1>
+      <div class="task-input">
+        <input type="text" id="taskInput" />
+        <button id="addBtn">Thêm công việc</button>
+      </div>
 
-    <script src="/app.js"></script>
+      <p id="error" class="error"></p>
+
+      <ul id="taskList"></ul>
+    </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
